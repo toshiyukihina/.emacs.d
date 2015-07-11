@@ -7,7 +7,7 @@
 
 ## Usage
 
-    $ git clone https://github.com/toshiyukihina/.emacs.d.git ~
+    $ git clone https://github.com/toshiyukihina/.emacs.d.git ~/.emacs.d
     $ cd ~/.emacs.d
     $ cask
 
