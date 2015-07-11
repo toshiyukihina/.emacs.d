@@ -133,6 +133,11 @@
 (require 'anything)
 (define-key global-map (kbd "C-;") 'anything)
 
+;; docker
+(add-to-list 'load-path "/your/path/to/dockerfile-mode/")
+(require 'dockerfile-mode)
+(add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
+
 ;; git-gutter
 (global-git-gutter-mode +1)
 (custom-set-variables
