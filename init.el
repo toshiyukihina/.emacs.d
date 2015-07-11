@@ -152,6 +152,13 @@
 (custom-set-variables
  '(git-gutter:handled-backends '(git hg)))
 
+;; shell
+(defun gker-setup-sh-mode ()
+  (interactive)
+  (setq sh-basic-offset 2
+        sh-indentation 2))
+(add-hook 'sh-mode-hook 'gker-setup-sh-mode)
+
 ;; Color theme
 (require 'color-theme)
 (load-theme 'wombat t)
