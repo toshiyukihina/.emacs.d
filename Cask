@@ -18,4 +18,4 @@
 (depends-on "sass-mode")
 (depends-on "sws-mode")
 (depends-on "web-mode")
-
+(depends-on "markdown-mode")
