@@ -20,3 +20,4 @@
 (depends-on "web-mode")
 (depends-on "markdown-mode")
 (depends-on "dockerfile-mode")
+(depends-on "magit")

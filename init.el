@@ -165,6 +165,9 @@
         sh-indentation 2))
 (add-hook 'sh-mode-hook 'gker-setup-sh-mode)
 
+;; Git
+(require 'magit)
+
 ;; Color theme
 (require 'color-theme)
 (load-theme 'wombat t)
