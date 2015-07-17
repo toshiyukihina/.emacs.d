@@ -19,17 +19,10 @@
 (define-key global-map [?¥] [?\\])
 
 ;; Font setting
-(set-face-attribute 'default nil
-                    :family "Monaco"
-                    :height 130)
-(set-fontset-font "fontset-default"
+(set-face-attribute 'default nil :family "Menlo" :height 140)
+(set-fontset-font (frame-parameter nil 'font)
                   'japanese-jisx0208
-                  '("Hiragino Kaku Gothic ProN"))
-(set-fontset-font "fontset-default"
-                  'katakana-jisx0201
-                  '("Hiragino kaku Gothic ProN"))
-(setq face-font-rescale-alist
-      '((".*Hiragino_Kaku_Gothic_ProN.*" . 1.2)))
+                  (font-spec :family "Hiragino Kaku Gothic ProN" :size 16))
 
 ;; linum mode
 (require 'linum)
