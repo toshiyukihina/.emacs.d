@@ -168,6 +168,9 @@
 ;; Git
 (require 'magit)
 
+;; minitest
+(require 'minitest)
+
 ;; Color theme
 (require 'color-theme)
 (load-theme 'wombat t)

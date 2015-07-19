@@ -21,3 +21,4 @@
 (depends-on "markdown-mode")
 (depends-on "dockerfile-mode")
 (depends-on "magit")
+(depends-on "minitest")
