@@ -171,6 +171,12 @@
 ;; minitest
 (require 'minitest)
 
+;; Java
+(add-hook 'java-mode-hook
+	  (lambda ()
+	    (setq indent-tabs-mode nil)
+	    (setq c-basic-offset 2)))
+
 ;; Color theme
 (require 'color-theme)
 (load-theme 'wombat t)
