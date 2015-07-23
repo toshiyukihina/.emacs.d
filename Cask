@@ -22,3 +22,4 @@
 (depends-on "dockerfile-mode")
 (depends-on "magit")
 (depends-on "minitest")
+(depends-on "coffee-mode")

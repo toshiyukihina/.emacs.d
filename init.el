@@ -177,6 +177,11 @@
 	    (setq indent-tabs-mode nil)
 	    (setq c-basic-offset 2)))
 
+;; coffee-mode
+(custom-set-variables
+ '(coffee-tab-width 2)
+ '(coffee-args-compile '("-c" "--bare")))
+
 ;; Color theme
 (require 'color-theme)
 (load-theme 'wombat t)
