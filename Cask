@@ -23,3 +23,4 @@
 (depends-on "magit")
 (depends-on "minitest")
 (depends-on "coffee-mode")
+(depends-on "exec-path-from-shell")

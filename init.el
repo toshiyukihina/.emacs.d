@@ -1,6 +1,9 @@
 (require'cask "/usr/local/Cellar/cask/0.7.2/cask.el")
 (cask-initialize)
 
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
 (prefer-coding-system 'utf-8)
 (setq coding-system-for-read 'utf-8)
 (setq coding-system-for-write 'utf-8)
