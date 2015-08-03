@@ -21,6 +21,7 @@
 (depends-on "markdown-mode")
 (depends-on "dockerfile-mode")
 (depends-on "magit")
+(depends-on "magit-gitflow")
 (depends-on "minitest")
 (depends-on "coffee-mode")
 (depends-on "exec-path-from-shell")
