@@ -185,6 +185,11 @@
  '(coffee-tab-width 2)
  '(coffee-args-compile '("-c" "--bare")))
 
+;; YAML mode
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(require 'flymake-yaml)
+
 ;; Color theme
 (require 'color-theme)
 (load-theme 'wombat t)

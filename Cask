@@ -24,3 +24,5 @@
 (depends-on "minitest")
 (depends-on "coffee-mode")
 (depends-on "exec-path-from-shell")
+(depends-on "yaml-mode")
+(depends-on "flymake-yaml")
