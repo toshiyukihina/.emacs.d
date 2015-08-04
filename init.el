@@ -8,6 +8,9 @@
 (setq coding-system-for-read 'utf-8)
 (setq coding-system-for-write 'utf-8)
 
+;; Don't show startup screen
+(setq inhibit-startup-screen t)
+
 ;; alpha setting
 (add-to-list 'default-frame-alist '(alpha . 90))
 
