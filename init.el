@@ -30,6 +30,16 @@
                   'japanese-jisx0208
                   (font-spec :family "Hiragino Kaku Gothic ProN" :size 16))
 
+;; color-moccur
+(when (require 'color-moccur nil t)
+  (define-key global-map (kbd "M-o") 'occur-by-moccur)
+  (setq moccur-split-word t)
+  (add-to-list 'dmoccur-exclusion-mask "\\.DS_Store")
+  (add-to-list 'dmoccur-exclusion-mask "^#.+#$")
+  (when (and (executable-find "cmigemo")
+             (require 'migemo nil t))
+    (setq moccur-use-migemo t)))
+
 ;; auto-install
 (require 'auto-install)
 (setq auto-install-directory "~/.emacs.d/elisp/")
@@ -89,6 +99,12 @@
 ;; Markdown Mode
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+;; auto-complete mode
+(when (require 'auto-complete-config nil t)
+  (add-to-list 'ac-dictionary-directories
+               "~/.emacs.d/elisp/ac-dict")
+  (define-key ac-mode-map (kbd "M-TAB") 'auto-complete)
+  (ac-config-default))
 
 ;; jade-mode
 (require 'sws-mode)

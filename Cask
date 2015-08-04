@@ -27,3 +27,5 @@
 (depends-on "exec-path-from-shell")
 (depends-on "yaml-mode")
 (depends-on "flymake-yaml")
+(depends-on "auto-complete")
+(depends-on "color-moccur")
