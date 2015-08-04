@@ -30,6 +30,12 @@
                   'japanese-jisx0208
                   (font-spec :family "Hiragino Kaku Gothic ProN" :size 16))
 
+;; auto-install
+(require 'auto-install)
+(setq auto-install-directory "~/.emacs.d/elisp/")
+(auto-install-update-emacswiki-package-name t)
+(auto-install-compatibility-setup)
+
 ;; linum mode
 (require 'linum)
 (global-linum-mode)

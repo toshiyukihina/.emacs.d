@@ -2,7 +2,7 @@
 (source melpa)
 (source marmalade)
 
-(depends-on "anything")
+(depends-on "auto-install")
 (depends-on "color-theme")
 (depends-on "flycheck")
 (depends-on "flymake-json")
