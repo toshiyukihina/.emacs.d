@@ -2,6 +2,7 @@
 (source melpa)
 (source marmalade)
 
+(depends-on "pallet")
 (depends-on "auto-install")
 (depends-on "color-theme")
 (depends-on "flycheck")

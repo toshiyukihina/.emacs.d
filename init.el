@@ -1,6 +1,8 @@
 (require'cask "/usr/local/Cellar/cask/0.7.2/cask.el")
 (cask-initialize)
 
+(require 'pallet)
+
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
