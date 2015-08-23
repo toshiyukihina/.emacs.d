@@ -29,3 +29,4 @@
 (depends-on "flymake-yaml")
 (depends-on "auto-complete")
 (depends-on "color-moccur")
+(depends-on "rspec-mode")

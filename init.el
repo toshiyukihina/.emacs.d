@@ -161,6 +161,9 @@
       (indent-line-to indent)
       (when (> offset 0) (forward-char offset)))))
 
+;; rspec-mode
+(require 'rspec-mode)
+
 (setq ruby-insert-encoding-magic-comment nil)
 
 ;;; anything
