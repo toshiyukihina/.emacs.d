@@ -31,3 +31,5 @@
 (depends-on "auto-complete")
 (depends-on "color-moccur")
 (depends-on "rspec-mode")
+(depends-on "elixir-mix")
+(depends-on "elixir-mode")

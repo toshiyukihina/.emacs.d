@@ -242,6 +242,9 @@
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (require 'flymake-yaml)
 
+;; Elixir mode
+(require 'elixir-mode)
+
 ;; Color theme
 (require 'color-theme)
 (load-theme 'wombat t)
