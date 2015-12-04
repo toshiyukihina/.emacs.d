@@ -114,24 +114,22 @@
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
-;;jsx
-(add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
-
 ;; web-mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 
-(defun web-mode-hook ()
+(defun my-web-mode-hook ()
   "Hooks for Web mode."
+  (setq web-mode-attr-indent-offset nil)
   (setq web-mode-markup-indent-offset 2)
-  (setq web-mode-css-offset    2)
-  (setq web-mode-script-offset 2)
-  (setq web-mode-php-offset    2)
-  (setq web-mode-java-offset   2)
-  (setq web-mode-jsx-offset    2)
-  (setq web-mode-asp-offset    2))
-(add-hook 'web-mode-hook 'web-mode-hook)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+  (setq web-mode-sql-indent-offset 2)
+  (setq indent-tabs-mode nil)
+  (setq tab-width 2))
+(add-hook 'web-mode-hook 'my-web-mode-hook)
 
 ;; sass-mode
 (require 'sass-mode)
