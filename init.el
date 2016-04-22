@@ -144,6 +144,11 @@
 (add-hook 'sass-mode-hook
           '(lambda() (sass-custom)))
 
+(add-hook 'css-mode-hook
+              (lambda ()
+                (setq css-indent-offset 2)
+                ))
+
 ;; ruby-mode
 (setq ruby-deep-indent-paren-style nil)
 (defadvice ruby-indent-line (after unindent-closing-paren activate)
